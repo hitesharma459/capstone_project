@@ -1,0 +1,17 @@
+[
+  {
+    "Input": "Pune 2BHK",
+    "Output_temp_0": "{\"prediction_label\": \"Above-median price\", \"confidence_level\": \"low\", \"top_reason\": \"Model weighting suggests property age pushed the estimate toward this class.\", \"second_reason\": \"floor level and total floors in the building also contributed, though probability is close to 0.5 so the signal is weak.\", \"next_step\": \"Review comparable listings in the same locality before relying on this prediction, since the model's overall discriminative power on this dataset is close to random (test AUC ~0.50).\"}",
+    "Output_temp_0.7": "{\"prediction_label\": \"Above-median price\", \"confidence_level\": \"low\", \"top_reason\": \"Model weighting indicates, tentatively, property age pushed the estimate toward this class.\", \"second_reason\": \"floor level and total floors in the building also contributed, though probability is close to 0.5 so the signal is weak.\", \"next_step\": \"Consider gathering more distinguishing features before trusting this call at higher sampling temperature.\"}"
+  },
+  {
+    "Input": "New Delhi 5BHK",
+    "Output_temp_0": "{\"prediction_label\": \"Below-median price\", \"confidence_level\": \"low\", \"top_reason\": \"Model weighting suggests furnishing status pushed the estimate toward this class.\", \"second_reason\": \"the number of bedrooms (BHK) also contributed, though probability is close to 0.5 so the signal is weak.\", \"next_step\": \"Review comparable listings in the same locality before relying on this prediction, since the model's overall discriminative power on this dataset is close to random (test AUC ~0.50).\"}",
+    "Output_temp_0.7": "{\"prediction_label\": \"Below-median price\", \"confidence_level\": \"low\", \"top_reason\": \"Model weighting indicates, tentatively, furnishing status pushed the estimate toward this class.\", \"second_reason\": \"the number of bedrooms (BHK) also contributed, though probability is close to 0.5 so the signal is weak.\", \"next_step\": \"Consider gathering more distinguishing features before trusting this call at higher sampling temperature.\"}"
+  },
+  {
+    "Input": "Chennai 3BHK",
+    "Output_temp_0": "{\"prediction_label\": \"Above-median price\", \"confidence_level\": \"low\", \"top_reason\": \"Model weighting suggests property age pushed the estimate toward this class.\", \"second_reason\": \"the number of bedrooms (BHK) also contributed, though probability is close to 0.5 so the signal is weak.\", \"next_step\": \"Review comparable listings in the same locality before relying on this prediction, since the model's overall discriminative power on this dataset is close to random (test AUC ~0.50).\"}",
+    "Output_temp_0.7": "{\"prediction_label\": \"Above-median price\", \"confidence_level\": \"low\", \"top_reason\": \"Model weighting indicates, tentatively, property age pushed the estimate toward this class.\", \"second_reason\": \"the number of bedrooms (BHK) also contributed, though probability is close to 0.5 so the signal is weak.\", \"next_step\": \"Consider gathering more distinguishing features before trusting this call at higher sampling temperature.\"}"
+  }
+]

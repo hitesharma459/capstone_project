@@ -1,0 +1,47 @@
+[
+  {
+    "feature_input": "Pune, 2BHK, 950sqft",
+    "predicted_class": 1,
+    "probability": 0.5055,
+    "raw_llm_response": "{\"prediction_label\": \"Above-median price\", \"confidence_level\": \"low\", \"top_reason\": \"Model weighting suggests property age pushed the estimate toward this class.\", \"second_reason\": \"floor level and total floors in the building also contributed, though probability is close to 0.5 so the signal is weak.\", \"next_step\": \"Review comparable listings in the same locality before relying on this prediction, since the model's overall discriminative power on this dataset is close to random (test AUC ~0.50).\"}",
+    "explanation_json": {
+      "prediction_label": "Above-median price",
+      "confidence_level": "low",
+      "top_reason": "Model weighting suggests property age pushed the estimate toward this class.",
+      "second_reason": "floor level and total floors in the building also contributed, though probability is close to 0.5 so the signal is weak.",
+      "next_step": "Review comparable listings in the same locality before relying on this prediction, since the model's overall discriminative power on this dataset is close to random (test AUC ~0.50)."
+    },
+    "validation_status": "pass",
+    "guardrail_result": "PASSED"
+  },
+  {
+    "feature_input": "New Delhi, 5BHK, 4800sqft",
+    "predicted_class": 0,
+    "probability": 0.4929,
+    "raw_llm_response": "{\"prediction_label\": \"Below-median price\", \"confidence_level\": \"low\", \"top_reason\": \"Model weighting suggests furnishing status pushed the estimate toward this class.\", \"second_reason\": \"the number of bedrooms (BHK) also contributed, though probability is close to 0.5 so the signal is weak.\", \"next_step\": \"Review comparable listings in the same locality before relying on this prediction, since the model's overall discriminative power on this dataset is close to random (test AUC ~0.50).\"}",
+    "explanation_json": {
+      "prediction_label": "Below-median price",
+      "confidence_level": "low",
+      "top_reason": "Model weighting suggests furnishing status pushed the estimate toward this class.",
+      "second_reason": "the number of bedrooms (BHK) also contributed, though probability is close to 0.5 so the signal is weak.",
+      "next_step": "Review comparable listings in the same locality before relying on this prediction, since the model's overall discriminative power on this dataset is close to random (test AUC ~0.50)."
+    },
+    "validation_status": "pass",
+    "guardrail_result": "PASSED"
+  },
+  {
+    "feature_input": "Chennai, 3BHK, 2200sqft",
+    "predicted_class": 1,
+    "probability": 0.5018,
+    "raw_llm_response": "{\"prediction_label\": \"Above-median price\", \"confidence_level\": \"low\", \"top_reason\": \"Model weighting suggests property age pushed the estimate toward this class.\", \"second_reason\": \"the number of bedrooms (BHK) also contributed, though probability is close to 0.5 so the signal is weak.\", \"next_step\": \"Review comparable listings in the same locality before relying on this prediction, since the model's overall discriminative power on this dataset is close to random (test AUC ~0.50).\"}",
+    "explanation_json": {
+      "prediction_label": "Above-median price",
+      "confidence_level": "low",
+      "top_reason": "Model weighting suggests property age pushed the estimate toward this class.",
+      "second_reason": "the number of bedrooms (BHK) also contributed, though probability is close to 0.5 so the signal is weak.",
+      "next_step": "Review comparable listings in the same locality before relying on this prediction, since the model's overall discriminative power on this dataset is close to random (test AUC ~0.50)."
+    },
+    "validation_status": "pass",
+    "guardrail_result": "PASSED"
+  }
+]
