@@ -1304,3 +1304,15 @@ incomplete data through.
    instruction *"do not overstate confidence when the probability is close
    to 0.5"* was designed for, and the mock explanations correctly reflect
    that low confidence rather than inventing false certainty.
+
+## Run the local frontend
+
+From the project root, start the app with the existing virtual environment:
+
+```powershell
+.\.venv\Scripts\python.exe app.py
+```
+
+Then open <http://127.0.0.1:8000>. The app uses the saved classifier to compare
+a property with the training data's median price category; it does not provide
+a rupee valuation. Treat results as indicative, not financial advice.
