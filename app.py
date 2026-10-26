@@ -10,7 +10,7 @@ import pandas as pd
 
 
 ROOT = Path(__file__).resolve().parent
-MODEL_DIR = ROOT / ".venv"
+MODEL_DIR = ROOT
 FRONTEND_DIR = ROOT / "frontend"
 MODEL = joblib.load(MODEL_DIR / "best_model.pkl")
 FEATURE_NAMES = json.loads((MODEL_DIR / "feature_names.json").read_text(encoding="utf-8"))
@@ -181,7 +181,7 @@ class HousingHandler(BaseHTTPRequestHandler):
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
-    host = os.environ.get("HOST", "127.0.0.1")
+    host = os.environ.get("HOST", "0.0.0.0")
     port = int(os.environ.get("PORT", "8000"))
     server = ThreadingHTTPServer((host, port), HousingHandler)
     logging.info("Housing insights frontend running at http://%s:%s", host, port)
